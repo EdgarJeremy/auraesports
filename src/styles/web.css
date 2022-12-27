@@ -144,6 +144,11 @@ body.bg-ba {
   margin-top: 80px;
 }
 
+.landing-video {
+  position: fixed;
+  z-index: -1;
+}
+
 .aura-btn {
   font-family: 'League Spartan';
   background-color: transparent;
@@ -536,3 +541,76 @@ body.bg-ba {
 .schedule-categories button:not(:first-child) {
   margin-left: 10px;
 }
+
+.schedule-list {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.schedule-card {
+  background-color: #ffffff;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.schedule-card .team {
+  display: flex;
+  flex: 2;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.schedule-card .team img {
+  width: 120px;
+  object-fit: cover;
+  -webkit-filter: drop-shadow(0px 0px 5px #aaa);
+  filter: drop-shadow(0px 0px 5px #aaa);
+}
+
+.schedule-card .team:last-child {
+  display: flex;
+}
+
+.schedule-card .team:before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #252525;
+  transform: rotate(45deg) translate(-28px, 103px);
+  z-index: 2;
+}
+
+.schedule-card .team:last-child::before {
+  transform: rotate(45deg) translate(103px, -28px);
+}
+
+.schedule-card .tour-detail {
+  display: flex;
+  flex: 5;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: AvenirBold;
+  font-style: italic;
+}
+
+.schedule-card .tour-detail .datetime {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.schedule-card .tour-detail .title {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.schedule-card .team .score {}

@@ -34,7 +34,30 @@ export default function Schedules() {
             <button onClick={() => changeMenu("category", "ml")} className={`aura-btn ${getActiveCategory('ml')}`}>Mobile Legends</button>
           </div>
         </div>
+        <div className="schedule-list">
+          {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+            <div key={i} className="schedule-card">
+              <div className="team">
+                <img src="/assets/aura-logo.png" />
+                <div className="score"></div>
+              </div>
+              <div className="tour-detail">
+                <div className="datetime">
+                  12/12/2022 | 05:00 PM
+                </div>
+                <div className="title">
+                  MPL Season 7
+                </div>
+              </div>
+              <div className="team">
+                <img src="/assets/logo-evos.png" />
+                <div className="score"></div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   )
 }
+
