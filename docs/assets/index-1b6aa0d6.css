@@ -1,1 +1,520 @@
-@import"https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&display=swap";@import"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css";@font-face{font-family:Avenir;src:url(/auraesports/fonts/avenir_ff/AvenirLTStd-Book.otf) format("opentype")}@font-face{font-family:AvenirBold;font-weight:700;src:url(/auraesports/fonts/avenir_ff/AvenirLTStd-Black.otf) format("opentype")}:root{--border-radius: 10px}@keyframes division-animate{0%{transform:translate(-5px,-5px)}25%{transform:translate(5px,-5px)}50%{transform:translate(-5px,5px)}75%{transform:translate(5px,5px)}to{transform:translate(-5px,-5px)}}html,body,#root{margin:0;padding:0;height:100%;font-family:Avenir,sans-serif}body{margin:0;padding:0;height:100%;background-image:url(/assets/home-background.png);background-position:center;background-size:cover;transition:.4s ease}body.bg-pubg{background-image:url(/assets/background-pubg.png)!important;background-position:center;background-size:cover}body.bg-ml{background-image:url(/assets/background-ml.png)!important;background-position:center;background-size:cover}body.bg-ba{background-image:url(/assets/background-ba.png)!important}.background-container{background-image:url(/assets/landing-background.png);height:100%;background-position:center;background-repeat:no-repeat;background-size:cover}.landing-component,.landing-component .row{margin:0 auto;max-width:1200px;height:100%}.landing-title{color:#fff;font-size:16pt;font-family:League Spartan,sans-serif;flex:1;justify-content:flex-start;display:flex;flex-direction:column}.landing-title div{flex:1}.landing-title .welcome{margin-left:15px;font-size:25px}.landing-title .title{margin-top:-25px;font-size:70px}.landing-text{color:#fff;margin-left:15px;font-weight:700;position:relative;margin-top:20px}.landing-text:before{content:"";position:absolute;left:-15px;top:0;bottom:0;width:5px;background-color:#fff;border-radius:var(--border-radius)}.landing-image{text-align:center}.landing-image img{width:70%}.landing-action{margin-top:80px}.aura-btn{font-family:League Spartan;background-color:transparent;border:2px solid #ffffff;color:#fff;text-decoration:none;padding:10px 20px;display:inline-block;font-weight:700;font-size:18px;transition:.3s ease;border-radius:var(--border-radius);font-style:italic}.aura-btn:hover{background-color:#fff;color:#ef4023}.aura-btn-tint{background-color:#ef4023!important;color:#fff!important}.aura-btn-white{font-family:AvenirBold;background-color:#fff;color:#ef4023}.front-container{margin:0 auto;max-width:1100px}.navbar-brand img{height:50px}.navbar-brand .aura-text{height:30px;margin-left:10px}.navbar-toggler{border-color:#fff}.navbar-toggler i{color:#fff!important}.nav-link{color:#fff!important;position:relative}.nav-link:before{position:absolute;content:"";background-color:#fff;bottom:0;right:100%;left:0;height:3px;transition:.2s ease;border-radius:10px}.nav-link.active:before{right:0}.front-tagline{padding:50px 0}.front-tagline img{width:90%}.front-card{background-color:#fff;padding:50px 0;border-radius:var(--border-radius);margin-bottom:20px}.front-card-title{font-family:AvenirBold;color:#ef4023}.front-card-title img{width:50px}.front-feed{padding:20px 10px}.front-feed img{width:100%}.front-division-container{position:relative}.front-division-container .division-ctrl{text-align:center;position:absolute;padding:30px;bottom:0px;right:0;left:0;z-index:3}.front-division-container .division-ctrl img{width:100px}.front-division-container .division-cover{transition:.8s ease;transform:scale(1)}.front-division-container:hover .division-cover{transform:scale(.95)}.front-division-container:hover .division-overlay img{opacity:100;transform:scale(1)}.division-overlay{position:absolute;right:0;left:0;bottom:0;z-index:2}.division-overlay img{transition:.2s ease;opacity:0;transform:scale(1.1);width:100%;height:100%;animation-name:division-animate;animation-duration:7s;animation-iteration-count:infinite}.partners-logo img{transition:.2s ease;filter:grayscale(100)}.partners-logo img:hover{filter:grayscale(0)}.footer{margin-top:50px;background-color:#fff}.footer-container{margin:0 auto;max-width:1100px}.footer-logo{text-align:right;padding-top:20px;padding-right:20px}.footer-logo img{width:70%}.footer-menus{padding-top:20px;padding-bottom:20px}.footer-menus h2{font-family:League Spartan,sans-serif;color:#ef4023}.footer-menus ul{list-style-type:none;margin:0;padding:0}.footer-menus ul li a{font-size:17px;text-decoration:none;color:#ef4023}.footer-menus ul li a:hover{text-decoration:underline}.footer-copyright{text-align:center;padding:10px;color:#fff;background-color:#ef4023}.page-title{font-size:30px;color:#fff;padding:20px 0;font-style:italic}.page-title span{font-family:AvenirBold}.division-container{padding:90px 0}.division-menu ul{list-style-type:none;padding:0}.division-menu ul li{margin-bottom:20px}.division-menu ul li button{width:100%;height:100px;border:0;outline:0;border-radius:20px;background-color:transparent;transition:.2s ease;transform:scale(.87)}.division-menu ul li button.active{margin-left:50px;transform:scale(1);box-shadow:0 0 20px #f90}.division-menu ul li button img{width:50px}.division-menu ul li button.btn-pubg{background-image:url(/assets/button-pubg.png);background-position:center;background-repeat:no-repeat;background-size:auto}.division-menu ul li button.btn-ml{background-image:url(/assets/button-ml.png);background-position:center;background-repeat:no-repeat;background-size:auto}.division-menu ul li button.btn-ba{color:#fff;font-size:50px;background-color:#59170c}.division-menu ul li button:hover{box-shadow:0 0 20px #f90}.division-info{color:#fff;text-align:center;padding:0 0 0 200px}.division-info .division-info-title{font-family:League Spartan;font-size:50px;font-style:italic}.division-info .division-info-action{margin-top:30px}.schedule-nav{text-align:center}.schedule-nav span{color:#fff;display:inline-block;margin:0 10px;font-size:20px}.schedule-nav a{text-decoration:none;color:#fff;display:inline-block;font-family:League Spartan;font-size:30px;transform:scale(.9);transition:.3s ease;position:relative;cursor:pointer}.schedule-nav a:before{content:"";position:absolute;bottom:0;right:100%;left:0;height:4px;background-color:#fff;border-radius:10px;transition:.3s ease}.schedule-nav a:last-child{margin-left:10px}.schedule-nav a.active{transform:scale(1)}.schedule-nav a.active:before{content:"";position:absolute;bottom:0;right:0;left:0;height:4px;background-color:#fff;border-radius:10px}.schedule-categories{margin-top:20px}.schedule-categories button{font-family:AvenirBold;font-size:13px}.schedule-categories button.active,.schedule-categories button:hover{box-shadow:0 0 20px #f90}.schedule-categories button:not(:first-child){margin-left:10px}
+@import"https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&display=swap";
+@import"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css";
+
+@font-face {
+  font-family: Avenir;
+  src: url(/auraesports/fonts/avenir_ff/AvenirLTStd-Book.otf) format("opentype")
+}
+
+@font-face {
+  font-family: AvenirBold;
+  font-weight: 700;
+  src: url(/auraesports/fonts/avenir_ff/AvenirLTStd-Black.otf) format("opentype")
+}
+
+:root {
+  --border-radius: 10px
+}
+
+@keyframes division-animate {
+  0% {
+    transform: translate(-5px, -5px)
+  }
+
+  25% {
+    transform: translate(5px, -5px)
+  }
+
+  50% {
+    transform: translate(-5px, 5px)
+  }
+
+  75% {
+    transform: translate(5px, 5px)
+  }
+
+  to {
+    transform: translate(-5px, -5px)
+  }
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Avenir, sans-serif
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url(/auraesports/assets/home-background.png);
+  background-position: center;
+  background-size: cover;
+  transition: .4s ease
+}
+
+body.bg-pubg {
+  background-image: url(/auraesports/assets/background-pubg.png) !important;
+  background-position: center;
+  background-size: cover
+}
+
+body.bg-ml {
+  background-image: url(/auraesports/assets/background-ml.png) !important;
+  background-position: center;
+  background-size: cover
+}
+
+body.bg-ba {
+  background-image: url(/auraesports/assets/background-ba.png) !important
+}
+
+.background-container {
+  background-image: url(/auraesports/assets/landing-background.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.landing-component,
+.landing-component .row {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100%
+}
+
+.landing-title {
+  color: #fff;
+  font-size: 16pt;
+  font-family: League Spartan, sans-serif;
+  flex: 1;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column
+}
+
+.landing-title div {
+  flex: 1
+}
+
+.landing-title .welcome {
+  margin-left: 15px;
+  font-size: 25px
+}
+
+.landing-title .title {
+  margin-top: -25px;
+  font-size: 70px
+}
+
+.landing-text {
+  color: #fff;
+  margin-left: 15px;
+  font-weight: 700;
+  position: relative;
+  margin-top: 20px
+}
+
+.landing-text:before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #fff;
+  border-radius: var(--border-radius)
+}
+
+.landing-image {
+  text-align: center
+}
+
+.landing-image img {
+  width: 70%
+}
+
+.landing-action {
+  margin-top: 80px
+}
+
+.aura-btn {
+  font-family: League Spartan;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  transition: .3s ease;
+  border-radius: var(--border-radius);
+  font-style: italic
+}
+
+.aura-btn:hover {
+  background-color: #fff;
+  color: #ef4023
+}
+
+.aura-btn-tint {
+  background-color: #ef4023 !important;
+  color: #fff !important
+}
+
+.aura-btn-white {
+  font-family: AvenirBold;
+  background-color: #fff;
+  color: #ef4023
+}
+
+.front-container {
+  margin: 0 auto;
+  max-width: 1100px
+}
+
+.navbar-brand img {
+  height: 50px
+}
+
+.navbar-brand .aura-text {
+  height: 30px;
+  margin-left: 10px
+}
+
+.navbar-toggler {
+  border-color: #fff
+}
+
+.navbar-toggler i {
+  color: #fff !important
+}
+
+.nav-link {
+  color: #fff !important;
+  position: relative
+}
+
+.nav-link:before {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  height: 3px;
+  transition: .2s ease;
+  border-radius: 10px
+}
+
+.nav-link.active:before {
+  right: 0
+}
+
+.front-tagline {
+  padding: 50px 0
+}
+
+.front-tagline img {
+  width: 90%
+}
+
+.front-card {
+  background-color: #fff;
+  padding: 50px 0;
+  border-radius: var(--border-radius);
+  margin-bottom: 20px
+}
+
+.front-card-title {
+  font-family: AvenirBold;
+  color: #ef4023
+}
+
+.front-card-title img {
+  width: 50px
+}
+
+.front-feed {
+  padding: 20px 10px
+}
+
+.front-feed img {
+  width: 100%
+}
+
+.front-division-container {
+  position: relative
+}
+
+.front-division-container .division-ctrl {
+  text-align: center;
+  position: absolute;
+  padding: 30px;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  z-index: 3
+}
+
+.front-division-container .division-ctrl img {
+  width: 100px
+}
+
+.front-division-container .division-cover {
+  transition: .8s ease;
+  transform: scale(1)
+}
+
+.front-division-container:hover .division-cover {
+  transform: scale(.95)
+}
+
+.front-division-container:hover .division-overlay img {
+  opacity: 100;
+  transform: scale(1)
+}
+
+.division-overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2
+}
+
+.division-overlay img {
+  transition: .2s ease;
+  opacity: 0;
+  transform: scale(1.1);
+  width: 100%;
+  height: 100%;
+  animation-name: division-animate;
+  animation-duration: 7s;
+  animation-iteration-count: infinite
+}
+
+.partners-logo img {
+  transition: .2s ease;
+  filter: grayscale(100)
+}
+
+.partners-logo img:hover {
+  filter: grayscale(0)
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #fff
+}
+
+.footer-container {
+  margin: 0 auto;
+  max-width: 1100px
+}
+
+.footer-logo {
+  text-align: right;
+  padding-top: 20px;
+  padding-right: 20px
+}
+
+.footer-logo img {
+  width: 70%
+}
+
+.footer-menus {
+  padding-top: 20px;
+  padding-bottom: 20px
+}
+
+.footer-menus h2 {
+  font-family: League Spartan, sans-serif;
+  color: #ef4023
+}
+
+.footer-menus ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+}
+
+.footer-menus ul li a {
+  font-size: 17px;
+  text-decoration: none;
+  color: #ef4023
+}
+
+.footer-menus ul li a:hover {
+  text-decoration: underline
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  background-color: #ef4023
+}
+
+.page-title {
+  font-size: 30px;
+  color: #fff;
+  padding: 20px 0;
+  font-style: italic
+}
+
+.page-title span {
+  font-family: AvenirBold
+}
+
+.division-container {
+  padding: 90px 0
+}
+
+.division-menu ul {
+  list-style-type: none;
+  padding: 0
+}
+
+.division-menu ul li {
+  margin-bottom: 20px
+}
+
+.division-menu ul li button {
+  width: 100%;
+  height: 100px;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: .2s ease;
+  transform: scale(.87)
+}
+
+.division-menu ul li button.active {
+  margin-left: 50px;
+  transform: scale(1);
+  box-shadow: 0 0 20px #f90
+}
+
+.division-menu ul li button img {
+  width: 50px
+}
+
+.division-menu ul li button.btn-pubg {
+  background-image: url(/auraesports/assets/button-pubg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto
+}
+
+.division-menu ul li button.btn-ml {
+  background-image: url(/auraesports/assets/button-ml.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto
+}
+
+.division-menu ul li button.btn-ba {
+  color: #fff;
+  font-size: 50px;
+  background-color: #59170c
+}
+
+.division-menu ul li button:hover {
+  box-shadow: 0 0 20px #f90
+}
+
+.division-info {
+  color: #fff;
+  text-align: center;
+  padding: 0 0 0 200px
+}
+
+.division-info .division-info-title {
+  font-family: League Spartan;
+  font-size: 50px;
+  font-style: italic
+}
+
+.division-info .division-info-action {
+  margin-top: 30px
+}
+
+.schedule-nav {
+  text-align: center
+}
+
+.schedule-nav span {
+  color: #fff;
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px
+}
+
+.schedule-nav a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  font-family: League Spartan;
+  font-size: 30px;
+  transform: scale(.9);
+  transition: .3s ease;
+  position: relative;
+  cursor: pointer
+}
+
+.schedule-nav a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: .3s ease
+}
+
+.schedule-nav a:last-child {
+  margin-left: 10px
+}
+
+.schedule-nav a.active {
+  transform: scale(1)
+}
+
+.schedule-nav a.active:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 10px
+}
+
+.schedule-categories {
+  margin-top: 20px
+}
+
+.schedule-categories button {
+  font-family: AvenirBold;
+  font-size: 13px
+}
+
+.schedule-categories button.active,
+.schedule-categories button:hover {
+  box-shadow: 0 0 20px #f90
+}
+
+.schedule-categories button:not(:first-child) {
+  margin-left: 10px
+}
