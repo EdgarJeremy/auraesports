@@ -1,12 +1,12 @@
 import { useSearchParams } from "react-router-dom";
 
-export default function Schedules() {
+export default function UpdateMedias() {
   document.body.classList.remove('bg-pubg');
   document.body.classList.remove('bg-ml');
   document.body.classList.remove('bg-ba');
 
   const [search, setSearchParams] = useSearchParams({
-    type: "result",
+    type: "gallery",
     category: "all"
   });
 
@@ -17,47 +17,36 @@ export default function Schedules() {
     search.set(cat, menu);
     setSearchParams(search);
   }
-
   return (
     <>
       <div className="page-title">
-        All<span>Schedules</span>
+        Updates&<span>Medias</span>
       </div>
       <div className="page-container">
         <div className="page-nav">
-          <a onClick={() => changeMenu("type", "result")} className={`${getActiveType("result")}`}>RESULT</a>{' '}<span>|</span>{' '}
-          <a onClick={() => changeMenu("type", "upcoming")} className={`${getActiveType("upcoming")}`}>UPCOMING</a>
+          <a onClick={() => changeMenu("type", "videos")} className={`${getActiveType("videos")}`}><i className="bi bi-play-circle-fill"></i>&nbsp;&nbsp;VIDEOS</a>{' '}<span>|</span>{' '}
+          <a onClick={() => changeMenu("type", "gallery")} className={`${getActiveType("gallery")}`}><i className="bi bi-image-fill"></i>&nbsp;&nbsp;GALLERY</a>{' '}<span>|</span>{' '}
+          <a onClick={() => changeMenu("type", "instagram")} className={`${getActiveType("instagram")}`}><i className="bi bi-instagram"></i>&nbsp;&nbsp;INSTAGRAM</a>
+
           <div className="page-categories">
             <button onClick={() => changeMenu("category", "all")} className={`aura-btn ${getActiveCategory('all')}`}>All Categories</button>
             <button onClick={() => changeMenu("category", "pubg")} className={`aura-btn ${getActiveCategory('pubg')}`}>PUBG Mobile</button>
             <button onClick={() => changeMenu("category", "ml")} className={`aura-btn ${getActiveCategory('ml')}`}>Mobile Legends</button>
           </div>
         </div>
-        <div className="schedule-list">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-            <div key={i} className="schedule-card">
-              <div className="team">
-                <img src="/assets/aura-logo.png" />
-                <div className="score">3</div>
-              </div>
-              <div className="tour-detail">
-                <div className="datetime">
-                  12/12/2022 | 05:00 PM
-                </div>
-                <div className="title">
-                  MPL Season 7
-                  {/* PIALA PRESIDEN ESPORTS 2022 - PUBGM */}
+
+        <div className="gallery-list">
+          <div className="row g-2">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
+              <div key={i} className="col-md-2">
+                <div className="pict-container">
+                  <img src="https://via.placeholder.com/200" />
                 </div>
               </div>
-              <div className="team">
-                <img src="/assets/logo-evos.png" />
-                <div className="score">2</div>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </>
   )
 }
-

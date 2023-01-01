@@ -18,10 +18,10 @@ export default function Front() {
               <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} aria-current="page" to="/front/">Home</NavLink>
               <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/front/division">Division</NavLink>
               <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/front/schedules">Schedule</NavLink>
-              <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/front/medias">Update & Media</NavLink>
+              <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/front/update-media">Update & Media</NavLink>
               <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/front/community">Community</NavLink>
               <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/front/company">Company</NavLink>
-              <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/front/store">Store</NavLink>
+              <a target="_blank" className="nav-link" href="https://instagram.com/auramerch">Store</a>
             </div>
           </div>
         </nav>

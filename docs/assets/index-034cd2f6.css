@@ -306,12 +306,7 @@ body.bg-ba {
 }
 
 .partners-logo img {
-  transition: .2s ease;
-  filter: grayscale(100)
-}
-
-.partners-logo img:hover {
-  filter: grayscale(0)
+  transition: .2s ease
 }
 
 .footer {
@@ -452,18 +447,19 @@ body.bg-ba {
   margin-top: 30px
 }
 
-.schedule-nav {
+.page-nav {
   text-align: center
 }
 
-.schedule-nav span {
+.page-nav span {
   color: #fff;
   display: inline-block;
   margin: 0 10px;
-  font-size: 20px
+  font-size: 20px;
+  font-family: AvenirBold
 }
 
-.schedule-nav a {
+.page-nav a {
   text-decoration: none;
   color: #fff;
   display: inline-block;
@@ -475,7 +471,7 @@ body.bg-ba {
   cursor: pointer
 }
 
-.schedule-nav a:before {
+.page-nav a:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -487,15 +483,15 @@ body.bg-ba {
   transition: .3s ease
 }
 
-.schedule-nav a:last-child {
+.page-nav a:last-child {
   margin-left: 10px
 }
 
-.schedule-nav a.active {
+.page-nav a.active {
   transform: scale(1)
 }
 
-.schedule-nav a.active:before {
+.page-nav a.active:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -506,21 +502,21 @@ body.bg-ba {
   border-radius: 10px
 }
 
-.schedule-categories {
-  margin-top: 20px
+.page-categories {
+  margin: 40px 0
 }
 
-.schedule-categories button {
+.page-categories button {
   font-family: AvenirBold;
   font-size: 13px
 }
 
-.schedule-categories button.active,
-.schedule-categories button:hover {
+.page-categories button.active,
+.page-categories button:hover {
   box-shadow: 0 0 20px #f90
 }
 
-.schedule-categories button:not(:first-child) {
+.page-categories button:not(:first-child) {
   margin-left: 10px
 }
 
@@ -534,8 +530,11 @@ body.bg-ba {
   display: flex;
   flex: 1;
   flex-direction: row;
-  margin-top: 20px;
   overflow: hidden
+}
+
+.schedule-card:not(:first-child) {
+  margin-top: 30px
 }
 
 .schedule-card .team {
@@ -546,6 +545,23 @@ body.bg-ba {
   justify-content: center;
   align-items: center;
   position: relative
+}
+
+.schedule-card .team .score {
+  position: absolute;
+  bottom: -14px;
+  left: 9px;
+  z-index: 2;
+  color: #fff;
+  font-family: League Spartan;
+  font-size: 50px;
+  font-style: italic
+}
+
+.schedule-card .team:last-child .score {
+  bottom: -14px;
+  right: 15px;
+  left: inherit
 }
 
 .schedule-card .team img {
@@ -565,12 +581,12 @@ body.bg-ba {
   width: 150px;
   height: 150px;
   background-color: #252525;
-  transform: rotate(45deg) translate(-28px, 103px);
+  transform: rotate(45deg) translate(-28px, 102px);
   z-index: 2
 }
 
 .schedule-card .team:last-child:before {
-  transform: rotate(45deg) translate(103px, -28px)
+  transform: rotate(45deg) translate(102px, -28px)
 }
 
 .schedule-card .tour-detail {
@@ -580,7 +596,9 @@ body.bg-ba {
   flex-direction: column;
   align-items: center;
   font-family: AvenirBold;
-  font-style: italic
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 15px
 }
 
 .schedule-card .tour-detail .datetime,
@@ -588,4 +606,220 @@ body.bg-ba {
   display: flex;
   flex: 1;
   align-items: center
+}
+
+.pict-container img,
+.community-image img {
+  width: 100%
+}
+
+.community-text {
+  color: #fff
+}
+
+.community-action {
+  margin-top: 20px
+}
+
+.community-team-title {
+  color: #fff;
+  font-family: League Spartan;
+  font-size: 50px;
+  text-align: center
+}
+
+.community-team-logos {
+  margin-top: 30px;
+  text-align: center
+}
+
+.community-team-logos img {
+  width: 120px;
+  padding: 0 20px
+}
+
+.community-team-logos .zepeto {
+  display: inline-block;
+  font-family: League Spartan;
+  color: #fff;
+  font-size: 40px
+}
+
+.community-team-discord {
+  text-align: center;
+  margin-top: 100px;
+  color: #fff
+}
+
+.community-team-discord a img {
+  width: 100px;
+  transition: .3s ease
+}
+
+.community-team-discord a:hover img {
+  -webkit-filter: drop-shadow(0px 0px 5px rgb(255, 153, 0));
+  filter: drop-shadow(0px 0px 5px rgb(255, 153, 0))
+}
+
+.event-list {
+  margin-top: 30px
+}
+
+.event-list .front-card {
+  margin-bottom: 0;
+  padding: 10px
+}
+
+.event-list .front-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px
+}
+
+.event-list a {
+  color: inherit;
+  text-decoration: none
+}
+
+.event-list a .front-card div {
+  text-align: center
+}
+
+.event-list a .front-card .event-title {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: AvenirBold
+}
+
+.tournament-modal .modal-body {
+  padding: 0;
+  overflow: hidden
+}
+
+.tournament-modal .modal-body img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: var(--bs-modal-border-radius);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0
+}
+
+.tournament-modal-title {
+  margin-top: 15px;
+  text-align: center
+}
+
+.tournament-modal-title h2 {
+  font-family: AvenirBold
+}
+
+.tournament-modal-title .divider {
+  width: 100px;
+  height: 6px;
+  background-color: #ef4023;
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 20px
+}
+
+.tournament-modal-description {
+  font-size: 14px
+}
+
+.tournament-modal-series .series-card {
+  border-bottom: 5px solid #ef4023;
+  border-radius: 10px;
+  padding: 10px 0;
+  margin: 20px
+}
+
+.tournament-modal-series .series-card h5 {
+  font-family: AvenirBold
+}
+
+.tournament-modal-series .series-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px
+}
+
+.tournament-modal-series p {
+  margin: 0
+}
+
+.community-activities {
+  margin: 0 auto;
+  max-width: 1000px
+}
+
+.community-activities .series-card {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-radius: 10px
+}
+
+.community-activities .series-card p {
+  margin: 0
+}
+
+.community-activities .series-card img {
+  width: 100%;
+  border-radius: 10px
+}
+
+.community-activities .series-card h5 {
+  font-family: AvenirBold
+}
+
+.community-activities .series-card .event-date {
+  flex: 1
+}
+
+.community-activities .activity-action {
+  text-align: center
+}
+
+.community-activities .activity-action img {
+  width: 70%;
+  transition: .3s ease
+}
+
+.community-activities .activity-action a:hover img {
+  -webkit-filter: drop-shadow(0px 0px 5px rgb(255, 153, 0));
+  filter: drop-shadow(0px 0px 5px rgb(255, 153, 0))
+}
+
+.company-info-container {
+  margin-top: 30px;
+  color: #fff
+}
+
+.company-info-container h3 {
+  font-family: AvenirBold
+}
+
+.company-info-container.partners img {
+  width: 100%
+}
+
+.company-info-container.partners h3 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px
+}
+
+.company-info-container.partners h3 a:hover {
+  text-decoration: underline
+}
+
+.company-info-container.contacts img {
+  width: 100%
+}
+
+.company-info-container.contacts .row {
+  margin-top: 30px
 }

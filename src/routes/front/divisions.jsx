@@ -14,7 +14,7 @@ export default function Division() {
   return (
     <>
       <div className="page-title">
-        Our <span>Division</span>
+        Our<span>Division</span>
       </div>
       <div className="division-container">
         <div className="row d-flex align-items-center">

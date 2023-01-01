@@ -77,7 +77,7 @@ export default function Index() {
             </div>
           </div>
           <div className="d-flex justify-content-center">
-            <a target="_blank" href="https://youtube.com/@auratv" className="aura-btn aura-btn-tint"><i className="bi-arrow-right"></i> VIEW MORE</a>
+            <a target="_blank" href="https://youtube.com/@auraesportsfamily" className="aura-btn aura-btn-tint"><i className="bi-arrow-right"></i> VIEW MORE</a>
           </div>
         </div>
       </div>
@@ -133,7 +133,7 @@ export default function Index() {
             <div className="row g-3 d-flex align-items-center">
               <div className="col-md-4">
                 <div className="partners-logo">
-                  <img src="/assets/BUKALAPAK.png" />
+                  <img src="/assets/POCO.png" />
                 </div>
               </div>
               <div className="col-md-4">
@@ -143,7 +143,7 @@ export default function Index() {
               </div>
               <div className="col-md-4">
                 <div className="partners-logo">
-                  <img src="/assets/POCO.png" />
+                  <img src="/assets/BUKALAPAK.png" />
                 </div>
               </div>
             </div>
